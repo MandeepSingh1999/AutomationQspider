@@ -39,6 +39,7 @@ public class YatraAutomate {
 		
 		//Details of buses
 		List<WebElement> allBuses = driver.findElements(By.xpath("//div[@class='v-card__text srp-touple']"));
+		
 		for(int i=0;i<allBuses.size();i++)
 		{
 			String bus = allBuses.get(i).getText();
