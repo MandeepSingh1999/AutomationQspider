@@ -20,10 +20,10 @@ public class Spotify {
 		driver.findElement(By.cssSelector("a[href='/search']")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("input[data-testid='search-input']")).sendKeys("winning");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("div[class='ouEZqTcvcvMfvezimm_J']")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.cssSelector("button[class='Button-sc-qlcn5g-0 aKwAm']")).click();
+		driver.findElement(By.xpath("//span[@class='ButtonInner-sc-14ud5tc-0 bXrXni encore-bright-accent-set']")).click();
 
 	}
 
