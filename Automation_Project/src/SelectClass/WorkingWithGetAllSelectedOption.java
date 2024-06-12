@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class WorkingWithSelectByIndex {
+public class WorkingWithGetAllSelectedOption {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -18,19 +18,31 @@ public class WorkingWithSelectByIndex {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://demoapps.qspiders.com/ui/dropdown?sublist=0");
 		
-		//identify the static dropdown
-		WebElement dropdown = driver.findElement(By.id("select3"));
+		//click on multi select option
+		driver.findElement(By.xpath("//a[text()='Multi Select']")).click();
+		
+		//identify the multi-select dropdown
+		WebElement dropdown = driver.findElement(By.id("select-multiple-native"));
 		//create the object of select class
 		Select s = new Select(dropdown);
-//		s.selectByIndex(3);
 		
-		List<WebElement> options = s.getOptions();
 		//selectByIndex()
-		for(int i=0;i<options.size();i++)
+		for(int i=0;i<4;i++)
 		{
 			s.selectByIndex(i);
 			Thread.sleep(2000);
 		}
+	
+		List<WebElement> selectedOptions = s.getAllSelectedOptions();
+		
+		for(WebElement options:selectedOptions)
+		{
+			System.out.println(options.getText());
+		}
+		
+		
+
+		
 		
 		
 		

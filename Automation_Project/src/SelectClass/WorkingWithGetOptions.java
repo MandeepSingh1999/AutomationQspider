@@ -1,6 +1,7 @@
 package SelectClass;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ public class WorkingWithGetOptions {
 		WebElement dropdown = driver.findElement(By.id("select3"));
 		//create the object of select class
 		Select s = new Select(dropdown);
-		//getoptions()
+//		getoptions()
 //		List<WebElement> allOptions = s.getOptions();
 //		
 //		for(WebElement option:allOptions)

@@ -11,6 +11,6 @@ public class WorkingWithName {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com");
-		driver.findElement(By.name("pass")).sendKeys("Aman@123");
+		driver.findElement(By.name("pass")).sendKeys("mandeep@123");
 	}
 }

@@ -11,7 +11,7 @@ public class WorkingWithGetLocation {
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://laptop-eeas1cv9/login.do");
+		driver.get("http://desktop-d595gen/login.do");
 		WebElement checkbox = driver.findElement(By.id("keepLoggedInCheckBox"));
 		System.out.println(checkbox.getLocation());
 	}

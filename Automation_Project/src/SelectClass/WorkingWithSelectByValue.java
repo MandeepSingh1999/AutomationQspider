@@ -21,7 +21,7 @@ public class WorkingWithSelectByValue {
 		WebElement dropdown = driver.findElement(By.id("select3"));
 		//create the object of select class
 		Select s = new Select(dropdown);
-		//selectByIndex()
+		//selectByValue()
 		s.selectByValue("Poland");
 		
 		

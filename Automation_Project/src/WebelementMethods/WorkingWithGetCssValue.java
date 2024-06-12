@@ -16,5 +16,7 @@ public class WorkingWithGetCssValue {
 		String getCssProperty = driver.findElement(By.xpath("//button[text()=' Login ']")).getCssValue("color");
 		Thread.sleep(3000);
 		System.out.println(getCssProperty);
+		
 	}
 }
+          

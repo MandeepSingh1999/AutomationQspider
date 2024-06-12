@@ -3,15 +3,15 @@ package WebelementMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkingWithIsSelected {
 
 	public static void main(String[] args) {
 		
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://laptop-eeas1cv9/login.do");
+		driver.get("http://desktop-d595gen/login.do");
 		WebElement checkbox = driver.findElement(By.id("keepLoggedInCheckBox"));
 		checkbox.click();
 		if(checkbox.isSelected())

@@ -11,6 +11,8 @@ public class LaunchingChromeBrowser {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com");
+		
+		
 		 
 }
 

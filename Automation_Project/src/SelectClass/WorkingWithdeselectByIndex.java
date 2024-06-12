@@ -38,8 +38,18 @@ public class WorkingWithdeselectByIndex {
 //			s.deselectByIndex(i);
 //			Thread.sleep(2000);
 //		}
+		
+		//deselectAll
 		s.deselectAll();
 		
+		//deselectByIndex
+//		s.deselectByIndex(1);
+		
+		//deselectByValue
+//		s.deselectByValue("Poland");
+		
+		//deselectByVisibleText
+//		s.deselectByVisibleText("Germany");
 		
 		
 		

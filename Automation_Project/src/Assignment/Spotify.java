@@ -24,7 +24,7 @@ public class Spotify {
 		driver.findElement(By.cssSelector("div[class='ouEZqTcvcvMfvezimm_J']")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[@class='ButtonInner-sc-14ud5tc-0 bXrXni encore-bright-accent-set']")).click();
-
+		
 	}
 
 }
